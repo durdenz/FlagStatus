@@ -4,7 +4,9 @@ app = Flask(__name__)
 
 @app.route('/')
 def index():
-    return render_template('index.html')
+    result = getFlagStatus()
+    return render_template('status.html', result=result)
+    # return render_template('index.html')
 
 @app.route('/my-link/')
 def my_link():
