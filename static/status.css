@@ -7,3 +7,73 @@
     margin-left: 100px;
     margin-right: 100px;
 }
+
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed&display=swap');
+
+.gridItem {
+    border: 1px solid rgba(0,0,0,0.8);
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+}
+
+.gridItem1 {
+    grid-area: top;
+    font-size: 10vw;
+    font-weight: bold;
+}
+
+.gridItem2 {
+    grid-area: left;
+    align-items: center;
+    font-size: 5vw;
+    font-weight: bold;
+}
+
+.gridItem3 {
+    grid-area: right;
+}
+
+.gridItem4 {
+    grid-area: bottom;
+}
+
+.gridItem4 button {
+    font-size: 5vw;
+    border-radius: 6px;
+    background-color: rgb(41, 175, 253);
+}
+
+.gridItem4 button:hover {
+    background-color: rgb(107, 199, 253);
+    color: white;
+}
+
+.gridItem4 button a:link {
+    text-decoration: none;
+    color: black;
+}
+
+.gridItem4 button a:visited {
+    text-decoration: none;
+    color: black;
+}
+
+.gridItem4 button a:hover {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+
+.gridContainer {
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    display:grid;
+    grid-template-areas:
+    'top top top top top top'
+    'left left left right right right'
+    'left left left right right right'
+    'bottom bottom bottom bottom bottom bottom';
+    background-color: #f0eeeb;
+    gap: 10px;
+    padding: 0px;
+}
+
