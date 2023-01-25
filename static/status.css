@@ -12,6 +12,7 @@
 
 .gridItem {
     border: 1px solid rgba(0,0,0,0.8);
+    background-color: #f0eeeb;
     padding: 20px;
     font-size: 30px;
     text-align: center;
@@ -72,7 +73,7 @@
     'left left left right right right'
     'left left left right right right'
     'bottom bottom bottom bottom bottom bottom';
-    background-color: #f0eeeb;
+    /* background-color: #f0eeeb; */
     gap: 10px;
     padding: 0px;
 }

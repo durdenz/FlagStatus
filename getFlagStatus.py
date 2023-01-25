@@ -22,12 +22,15 @@ def getFlagStatus():
     # Check if statusDiv contains FULL STAFF
     if (statusDiv.find('FULL') >= 0):
         flagStatus = "Full Staff"
+        flagURL = '../static/flag-widget.jpg'
     elif (statusDiv.find('HALF') >= 0):
         flagStatus = "Half Staff"
+        flagURL = '../static/flag-widget-half.jpg'
     else:
         flagStatus = "Error"
+        flagURL = '../static/flag-widget.jpg'
 
-    flagURL = '../static/flag-widget.jpg'
+    # flagURL = '../static/flag-widget.jpg'
 
     print(flagStatus)
     print(flagDate)
